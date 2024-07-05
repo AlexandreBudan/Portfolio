@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 200vh;
+    color: #022202;
+    font-family: "Comfortaa", sans-serif;
+    background-image: url(../img/background.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+    animation: moveBackground 60s linear infinite;
+}
+
+@keyframes moveBackground {
+    0% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
