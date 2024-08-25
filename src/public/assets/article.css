@@ -1,0 +1,8 @@
+.p-md-5 {
+    margin-top: 10rem;
+}
+
+.bg-body-secondary {
+    --bs-bg-opacity: 1;
+    background-color: rgba(245, 253, 198, 1) !important;
+}

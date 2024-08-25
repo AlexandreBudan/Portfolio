@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="../public/assets/header.css" />
     <link rel="stylesheet" href="../public/assets/footer.css" />
     <link rel="stylesheet" href="../public/assets/home.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="../public/assets/experience.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
 </head>
 
 <body>
@@ -42,21 +43,446 @@
         </a>
     </div>
 
-    <!-- Transition -->
-    <div class="transition">
-        <p><span>Contact</span><span>Contact</span><span>Contact</span><span>Contact</span><span>Contact</span><span>Contact</span><span>Contact</span><span>Contact</span><span>Contact</span><span>Contact</span><span>Contact</span><span>Contact</span><span>Contact</span><span>Contact</span><span>Contact</span><span>Contact</span><span>Contact</span><span>Contact</span><span>Contact</span><span>Contact</span><span>Contact</span><span>Contact</span><span>Contact</span><span>Contact</span><span>Contact</span><span>Contact</span><span>Contact</span><span>Contact</span><span>Contact</span><span>Contact</span><span>Contact</span><span>Contact</span><span>Contact</span><span>Contact</span><span>Contact</span><span>Contact</span><span>Contact</span><span>Contact</span><span>Contact</span><span>Contact</span>
-        </p>
-        <p class="reverse">
-            <span>Contact</span><span>Contact</span><span>Contact</span><span>Contact</span><span>Contact</span><span>Contact</span><span>Contact</span><span>Contact</span><span>Contact</span><span>Contact</span><span>Contact</span><span>Contact</span><span>Contact</span><span>Contact</span><span>Contact</span><span>Contact</span><span>Contact</span><span>Contact</span><span>Contact</span><span>Contact</span><span>Contact</span><span>Contact</span><span>Contact</span><span>Contact</span><span>Contact</span><span>Contact</span><span>Contact</span><span>Contact</span><span>Contact</span><span>Contact</span><span>Contact</span><span>Contact</span><span>Contact</span><span>Contact</span><span>Contact</span><span>Contact</span><span>Contact</span><span>Contact</span><span>Contact</span><span>Contact</span>
-        </p>
+    <!-- Home -->
+    <div class="home" id="home">
+        <h1>My Experiences</h1>
+        <h3>---- Projects and Professional Experiences ----</h3>
+        <div class="arrow">
+            <a href="#">
+                <i class="fa-solid fa-arrow-down"></i>
+            </a>
+        </div>
     </div>
 
-    <!-- Contact -->
-    <div class="contact" id="contact">
-        <p>- alexandre.budan@outlook.com -</p>
-        <p>- 06.60.23.71.19 -</p>
-        <p>- Lyon and Around -</p>
-        <p>- Computer science student, passionate about the Back-End, software and the world of AI. -</p>
+    <!-- Transition -->
+    <div class="transition" id="exp">
+        <p id="span-container"></p>
+        <p id="span-container" class="reverse"></p>
+    </div>
+
+    <!-- Experiences -->
+    <div class="exp">
+        <div class="choose" id="project1">
+            <a href="#" class="project-link">
+                <div class="prop">
+                    <img src="/src/public/img/projects.png" alt="" />
+                    <div class="overlay">
+                        <p>School Projects</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="choose" id="project2">
+            <a href="#" class="project-link">
+                <div class="prop">
+                    <img src="/src/public/img/professionnal.png" alt="" />
+                    <div class="overlay">
+                        <p>Professional Experiences</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div id="projectSection" class="hidden">
+        <!-- Arrow -->
+        <div class="arrow2">
+            <a href="#">
+                <i class="fa-solid fa-arrow-down"></i>
+            </a>
+        </div>
+
+        <!-- Transition -->
+        <div class="transition" id="exp">
+            <p id="span-container"></p>
+            <p id="span-container" class="reverse"></p>
+        </div>
+
+        <!-- PrendsTaGo -->
+        <div class="oneProj">
+            <div class="one">
+                <h2>PrendsTaGo</h2>
+            </div>
+            <div class="two">
+                <a class="carousel-control prev" onclick="prevSlide()">&#10094;</a>
+                <div class="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="/src/public/img/PTG1.png" alt="Image 1" />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/src/public/img/PTG2.png" alt="Image 2" />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/src/public/img/PTG3.png" alt="Image 3" />
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control next" onclick="nextSlide()">&#10095;</a>
+            </div>
+            <div class="three">
+                <h4 id="info">Informations</h4>
+                <div class="info">
+                    <div class="container">
+                        <h5>Team</h5>
+                        <p>- Alexandre Budan</p>
+                        <br />
+                        <br />
+                    </div>
+                    <div class="container">
+                        <h5>Dates</h5>
+                        <p>- December 2024</p>
+                    </div>
+                    <div class="container">
+                        <h5>Technologies</h5>
+                        <p>FRONT-END : HTML, CSS, JavaScript</p>
+                        <br />
+                        <p>BACK-END : Php, Docker, MySQL</p>
+                    </div>
+                    <div class="container">
+                        <h5>Github Link</h5>
+                        <p>
+                            <a href="https://github.com/AlexandreBudan/GAVE" target="_blank">PrendsTaGo - Github</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="four">
+                <h4 id="desc">Description</h4>
+                <p>
+                    PrendsTaGo is a 2nd-year graduate project at Ynov Campus Lyon. We
+                    were asked to create a functional car rental site where you could
+                    reserve a car, view its features, and many other constraints. The
+                    aim of this project was to learn php from scratch, but also for me
+                    to learn more about Docker. I really enjoyed doing this project, as
+                    I'm already very comfortable working with php frameworks. I was also
+                    able to deal with a lot of Docker scenarios, which meant that I
+                    gained a lot of skills on this project.
+                </p>
+            </div>
+        </div>
+
+        <!-- Transition -->
+        <div class="transition" id="exp">
+            <p id="span-container"></p>
+            <p id="span-container" class="reverse"></p>
+        </div>
+
+        <!-- GAVE -->
+        <div class="oneProj">
+            <div class="one">
+                <h2>GAVE</h2>
+            </div>
+            <div class="two">
+                <a class="carousel-control prev" onclick="prevSlide()">&#10094;</a>
+                <div class="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="/src/public/img/GAVE1.png" alt="Image 1" />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/src/public/img/GAVE2.png" alt="Image 2" />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/src/public/img/GAVE3.png" alt="Image 3" />
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control next" onclick="nextSlide()">&#10095;</a>
+            </div>
+            <div class="three">
+                <h4 id="info">Informations</h4>
+                <div class="info">
+                    <div class="container">
+                        <h5>Team</h5>
+                        <p>- Alexandre Budan</p>
+                        <p>- Vincent Magnien</p>
+                        <p>- Emma Picard</p>
+                    </div>
+                    <div class="container">
+                        <h5>Dates</h5>
+                        <p>- March 2023</p>
+                    </div>
+                    <div class="container">
+                        <h5>Technologies</h5>
+                        <p>FRONT-END : HTML, CSS, JavaScript</p>
+                        <br />
+                        <p>BACK-END : Golang, SQL</p>
+                    </div>
+                    <div class="container">
+                        <h5>Github Link</h5>
+                        <p>
+                            <a href="https://github.com/AlexandreBudan/PrendsTaGo" target="_blank">GAVE - Github</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="four">
+                <h4 id="desc">Description</h4>
+                <p>
+                    GAVE is a 1st year graduate project at Ynov Campus Lyon. We were
+                    asked to create a music website where you could find information on
+                    artists, see their upcoming concerts, etc... This project enabled us
+                    to discover what an API was and how to use it, notably on a Golang
+                    server. As I was already familiar with the concept of APIs in php,
+                    this project was a good way of refining what I already knew and
+                    learning more about the Golang language.
+                </p>
+            </div>
+        </div>
+
+        <!-- Transition -->
+        <div class="transition" id="exp">
+            <p id="span-container"></p>
+            <p id="span-container" class="reverse"></p>
+        </div>
+
+        <!-- BasketJoyride -->
+        <div class="oneProj">
+            <div class="one">
+                <h2>BasketJoyride</h2>
+            </div>
+            <div class="two">
+                <a class="carousel-control prev" onclick="prevSlide()">&#10094;</a>
+                <div class="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="/src/public/img/BJ1.png" alt="Image 1" />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/src/public/img/BJ2.png" alt="Image 2" />
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control next" onclick="nextSlide()">&#10095;</a>
+            </div>
+            <div class="three">
+                <h4 id="info">Informations</h4>
+                <div class="info">
+                    <div class="container">
+                        <h5>Team</h5>
+                        <p>- Alexandre Budan</p>
+                        <br />
+                        <br />
+                    </div>
+                    <div class="container">
+                        <h5>Dates</h5>
+                        <p>- May 2024</p>
+                    </div>
+                    <div class="container">
+                        <h5>Technologies</h5>
+                        <p>GAME ENGINE : Unity</p>
+                        <br />
+                    </div>
+                    <div class="container">
+                        <h5>Github Link</h5>
+                        <p>
+                            <a href="https://github.com/AlexandreBudan/Game_Eval" target="_blank">Basket Joyride -
+                                Github</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="four">
+                <h4 id="desc">Description</h4>
+                <p>
+                    Basket Joyride is a 2nd year graduate project at Ynov Campus Lyon.
+                    We were asked to create a 2D or 3D game, respecting the constraints
+                    that had to be present in the game. This project enabled me to
+                    discover what Unity is and to learn how to use it to make this 2D
+                    game. In particular, we had to add a life and death situation, a
+                    monster chasing us, a money system, etc... I particularly enjoyed
+                    doing this project because it was the first time I'd been involved
+                    in something I knew nothing about.
+                </p>
+            </div>
+        </div>
+
+        <!-- Transition -->
+        <div class="transition" id="exp">
+            <p id="span-container"></p>
+            <p id="span-container" class="reverse"></p>
+        </div>
+
+        <!-- GymGenius -->
+        <div class="oneProj">
+            <div class="one">
+                <h2>Gym Genius</h2>
+            </div>
+            <div class="two">
+                <a class="carousel-control prev" onclick="prevSlide()">&#10094;</a>
+                <div class="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="/src/public/img/PTG1.png" alt="Image 1" />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/src/public/img/PTG2.png" alt="Image 2" />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/src/public/img/PTG3.png" alt="Image 3" />
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control next" onclick="nextSlide()">&#10095;</a>
+            </div>
+            <div class="three">
+                <h4 id="info">Informations</h4>
+                <div class="info">
+                    <div class="container">
+                        <h5>Team</h5>
+                        <p>- Alexandre Budan</p>
+                        <p>- Alexandre Noblet</p>
+                        <p>- Manon Le Barazer</p>
+                    </div>
+                    <div class="container">
+                        <h5>Dates</h5>
+                        <p>- February 2024</p>
+                    </div>
+                    <div class="container">
+                        <h5>Technologies</h5>
+                        <p>FRONT-END : XAML</p>
+                        <br />
+                        <p>BACK-END : CSharp</p>
+                    </div>
+                    <div class="container">
+                        <h5>Github Link</h5>
+                        <p>
+                            <a href="https://github.com/AlexNbl27/GymGenius" target="_blank">Gym Genius - Github</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="four">
+                <h4 id="desc">Description</h4>
+                <p>
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in
+                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="proSection" class="hidden">
+        <!-- Arrow -->
+        <div class="arrow2">
+            <a href="#">
+                <i class="fa-solid fa-arrow-down"></i>
+            </a>
+        </div>
+
+        <!-- Transition -->
+        <div class="transition" id="exp">
+            <p id="span-container"></p>
+            <p id="span-container" class="reverse"></p>
+        </div>
+
+        <!-- TCP Innovation -->
+        <div class="oneProj">
+            <div class="one">
+                <h2>TCP / LMDW</h2>
+            </div>
+            <div class="two">
+                <a class="carousel-control prev" onclick="prevSlide()">&#10094;</a>
+                <div class="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="/src/public/img/TCP1.png" alt="Image 1" />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/src/public/img/TCP2.png" alt="Image 2" />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/src/public/img/TCP3.png" alt="Image 3" />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/src/public/img/TCP4.jpg" alt="Image 3" />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/src/public/img/TCP5.jpg" alt="Image 3" />
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control next" onclick="nextSlide()">&#10095;</a>
+            </div>
+            <div class="three">
+                <h4 id="info">Informations</h4>
+                <div class="info">
+                    <div class="container">
+                        <h5>Useful infos</h5>
+                        <p>Boss : Hugues Tubert</p>
+                        <p>Location : 29 rue Lalande, Lyon</p>
+                        <p>Phone: 06 35 12 15 61</p>
+                        <p>Internship supervisor: Elise Lefranc</p>
+                    </div>
+                    <div class="container">
+                        <h5>Dates</h5>
+                        <p>- July / August 2024</p>
+                    </div>
+                    <div class="container">
+                        <h5>Technologies</h5>
+                        <p>FRONT-END : HTML, CSS, Jumla, Wordpress</p>
+                        <br />
+                        <p>BACK-END : Php, Python</p>
+                    </div>
+                    <div class="container">
+                        <h5>linkedIn Link</h5>
+                        <p>
+                            <a href="https://www.linkedin.com/company/tcp-innovation/" target="_blank">TCP-Innovation LinkedIn</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="four">
+                <h4 id="desc">Description</h4>
+                <p>
+                    TCP Innovation, founded in 2007, is an IT company that offers
+                    services for the creation of websites, from graphic charters to the
+                    detailed and unique realization of websites.
+                </p>
+                <p>
+                    Les Mystères du Web, founded in 2019, is a for-profit platform
+                    managed by TCP Innovation, with the aim of making available a range
+                    of articles, conferences and more, so that everyone can find out
+                    more about today's IT and how it works.
+                </p>
+                <p>
+                    It was in this context that I carried out my end-of-second-year
+                    internship as a web developer. My tasks included php from scratch,
+                    python scripting and the use of CMS such as Jumla. I was also able 
+                    to carry out tasks for Mystères du Web, such as a conference on 
+                    today's Open Source tools.
+                </p>
+            </div>
+            <div class="five">
+                <h4 id="info">Blog - Articles</h4>
+            </div>
+            <div class="six">
+                <h6>Article 1: Setting my internship in context</h6>
+                <p>First of all, it is important to put into context what happened during my internship and to explain why it happened that way.</p>
+                <a href="/src/app/articlePage1.html" class="link">Link to this article</a>
+            </div>
+            <div class="seven">
+                <h6>Article 2: Typical day at TCP</h6>
+                <p>Here is a typical day at TCP Innovation from arrival in the morning until the end of the day.</p>
+                <a href="/src/app/articlePage2.html" class="link">Link to this article</a>
+            </div>
+            <div class="eight">
+                <h6>Article 3: My difficulties at TCP</h6>
+                <p>Here I present to you the difficulties that I encountered during this internship and why I had to end it.</p>
+                <a href="/src/app/articlePage3.html" class="link">Link to this article</a>
+            </div>
+            <div class="nine">
+                <h6>Article 4: Conducting a conference for LMDW</h6>
+                <p>The production of a conference for Les Mystères du Web on today's Open Source tools.</p>
+                <a href="/src/app/articlePage4.html" class="link">Link to this article</a>
+            </div>
+        </div>
     </div>
 
     <!-- Footer -->
@@ -65,7 +491,96 @@
     </footer>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script>
-        ScrollReveal().reveal('.about', { delay: 400 }, { reset: true });
+        ScrollReveal().reveal(".about", { delay: 400 }, { reset: true });
+
+        const containers = document.querySelectorAll("#span-container");
+        let text = "Experiences";
+        const count = 40;
+
+        containers.forEach((container, index) => {
+            switch (index) {
+                case 2:
+                case 3:
+                    text = "PrendsTaGo";
+                    break;
+                case 4:
+                case 5:
+                    text = "GAVE";
+                    break;
+                case 6:
+                case 7:
+                    text = "BasketJoyride";
+                    break;
+                case 8:
+                case 9:
+                    text = "GymGenius";
+                    break;
+                case 10:
+                case 11:
+                    text = "TCPInnovation";
+                    break;
+                default:
+                    text = "Experiences"; // Réinitialisez text à sa valeur par défaut
+                    break;
+            }
+            for (let i = 0; i < count; i++) {
+                const span = document.createElement("span");
+                span.textContent = text;
+                container.appendChild(span);
+            }
+        });
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const carousels = document.querySelectorAll(".carousel");
+
+            carousels.forEach((carousel, index) => {
+                let currentIndex = 0;
+                const slides = carousel.querySelectorAll(".carousel-item");
+                const inner = carousel.querySelector(".carousel-inner");
+                const parent = carousel.parentElement;
+                const prevButton = parent.querySelector(".prev");
+                const nextButton = parent.querySelector(".next");
+
+                function showSlide(n) {
+                    if (n >= slides.length) currentIndex = 0;
+                    if (n < 0) currentIndex = slides.length - 1;
+                    slides.forEach((slide) => slide.classList.remove("active"));
+                    slides[currentIndex].classList.add("active");
+                    inner.style.transform = `translateX(-${currentIndex * 100}%)`;
+                }
+
+                prevButton.addEventListener("click", () => {
+                    currentIndex--;
+                    showSlide(currentIndex);
+                });
+
+                nextButton.addEventListener("click", () => {
+                    currentIndex++;
+                    showSlide(currentIndex);
+                });
+
+                showSlide(currentIndex);
+            });
+        });
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const projectLink1 = document.querySelector("#project1");
+            const projectLink2 = document.querySelector("#project2");
+            const projectSection = document.getElementById("projectSection");
+            const professionnalSection = document.getElementById("proSection");
+
+            projectLink1.addEventListener("click", (event) => {
+                event.preventDefault();
+                projectSection.classList.remove("hidden");
+                professionnalSection.classList.add("hidden");
+            });
+
+            projectLink2.addEventListener("click", (event) => {
+                event.preventDefault();
+                projectSection.classList.add("hidden");
+                professionnalSection.classList.remove("hidden");
+            });
+        });
     </script>
 </body>
 
